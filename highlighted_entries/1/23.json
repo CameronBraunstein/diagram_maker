@@ -1,36 +1,36 @@
 {
     "highlighted_entries": {
-        "9": {
-            "edge_color": "#2a892a",
+        "0": {
+            "edge_color": "#2106b9",
             "text_offset": [
-                -6,
-                55
+                30,
+                25
             ],
-            "box_name": "cabinet"
+            "box_name": "floor"
         },
-        "10": {
-            "edge_color": "#6794ab",
+        "4": {
+            "edge_color": "#d1b804",
             "text_offset": [
                 0,
                 0
             ],
-            "box_name": "cushion"
+            "box_name": "wall"
         },
-        "12": {
-            "edge_color": "#653b9b",
+        "5": {
+            "edge_color": "#332a89",
             "text_offset": [
-                120,
-                116
+                33,
+                52
             ],
-            "box_name": "bed"
+            "box_name": "table"
         },
-        "13": {
-            "edge_color": "#000000",
+        "6": {
+            "edge_color": "#d1b804",
             "text_offset": [
-                -8,
-                68
+                0,
+                0
             ],
-            "box_name": "board"
+            "box_name": "wall"
         }
     }
 }
