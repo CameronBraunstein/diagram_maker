@@ -1,3 +1,4 @@
+import os
 from loaders_and_savers import _load_json
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
@@ -16,7 +17,8 @@ class DiagramSaver:
         self.default_alpha = 0.2
 
     def __call__(self,highlighted_entries,diagram_type,layout_path, pdf_path ):
-
+        # Ensure the directory exists
+        
         bounding_boxes = _load_json(layout_path)
         frame_height, frame_width = 512, 512
 
@@ -27,7 +29,7 @@ class DiagramSaver:
         ax.set_yticks([])
 
         for i, obj in enumerate(bounding_boxes['annos']):
-
+            
             if 'opacity' in obj:
                 if obj['opacity'] < 0.5:
                     print(f'Opacity less than 0.5, skipping {i}')
@@ -53,13 +55,16 @@ class DiagramSaver:
             fontweight = 'normal'
 
             fontsize = get_font_size(diagram_type)
+            print('fontsize:', fontsize)
             boxstyle_padding = get_pad_size(diagram_type)
-            if i in highlighted_entries.keys():
-                entry_dict = highlighted_entries[i]
-                if BoxProperties.BOX_NAME in entry_dict:
-                    edgecolor = hex_dict[entry_dict[BoxProperties.BOX_NAME]]   
+            if str(i) in highlighted_entries.keys():
+                entry_dict = highlighted_entries[str(i)]
+                print(entry_dict.keys())
+                if BoxProperties.BOX_NAME.value in entry_dict:
+                    
+                    edgecolor = hex_dict.get(entry_dict.get(BoxProperties.BOX_NAME.value), "#000000")  
                 elif BoxProperties.EDGE_COLOR in entry_dict:
-                    edgecolor = entry_dict[BoxProperties.EDGE_COLOR]
+                    edgecolor = entry_dict[BoxProperties.EDGE_COLOR.value]
                 if BoxProperties.BOLDED_FRAME in entry_dict:
                     linewidth = 4
                     alpha=0.4
@@ -68,8 +73,8 @@ class DiagramSaver:
                 z_order = 2
 
                 facecolor = hex_to_rgba(edgecolor, alpha)
-                if BoxProperties.TEXT_OFFSET in entry_dict:
-                    x_offset, y_offset = entry_dict[BoxProperties.TEXT_OFFSET]
+                if BoxProperties.TEXT_OFFSET.value in entry_dict:
+                    x_offset, y_offset = entry_dict[BoxProperties.TEXT_OFFSET.value]
                 else:
                     x_offset, y_offset = 0,0
 
@@ -93,6 +98,7 @@ class DiagramSaver:
                 zorder=z_order)
             ax.add_patch(rect)
 
+        os.makedirs(os.path.dirname(pdf_path), exist_ok=True)
         plt.savefig(pdf_path,bbox_inches='tight', pad_inches =0.0,format='pdf')
 
 

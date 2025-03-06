@@ -27,7 +27,7 @@ class BoxProperties(Enum):
 
 def get_font_size(input):
     if input == DiagramName.MAIN_RESULTS.value:
-        return 28
+        return 16 # it was 28. hevra changed it to the current value
     elif input == DiagramName.TEASER.value:
         return 30
     elif input == DiagramName.METHOD.value:
