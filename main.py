@@ -76,7 +76,7 @@ if __name__ == '__main__':
     viewer.show()
     app.exec_()
 
-    highlighted_entries = _load_json("diagram_maker/highlighted_entries"+current_scene_instance+".json")
+    highlighted_entries = _load_json("/home/hepe00001/diagram_maker/highlighted_entries"+current_scene_instance+".json")
 
     # after the generation of highlighted entries
     diagram_saver = DiagramSaver()
