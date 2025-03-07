@@ -186,8 +186,8 @@ class LabelBoxItem(QGraphicsRectItem):
         super().__init__(parent)
         self.text_item = QGraphicsTextItem(text, self)
         self.text_item.setDefaultTextColor(Qt.black)
-
-        font = QFont("Arial", 10)  
+        scale_factor = 2  # Increase this to make the boxes appear larger but want to keep the font the same size
+        font = QFont("Arial", int(28 / scale_factor))  
         self.text_item.setFont(font)
         text_rect = self.text_item.boundingRect()
 
@@ -215,11 +215,11 @@ class LabelBoxItem(QGraphicsRectItem):
     def get_offset(self):
         """Calculate the offset relative to the bounding box after movement."""
         text_box_x, text_box_y = self.x(), self.y()  # Get updated position of the text box
-
-        offset_x = text_box_x - self.bb_x
-        offset_y = text_box_y - self.bb_y
-
-        return [int(offset_x), int(offset_y)]
+        
+        self.offset_x = int(text_box_x - self.bb_x)
+        self.offset_y = int(text_box_y - self.bb_y)
+        print(f"Text box position: {text_box_x}, {text_box_y}, {self.bb_x}, {self.bb_y}, offset: {self.offset_x}, {self.offset_y}")
+        return [int(self.offset_x), int(self.offset_y)]
 
 class AnnotationViewer(QMainWindow):
     def __init__(self, json_file, current_scene_instance):
@@ -232,6 +232,8 @@ class AnnotationViewer(QMainWindow):
         self.bbox_items = []  # Store bounding box references
         self.initUI()
         self.current_scene_instance = current_scene_instance
+        self.offset_x = 0
+        self.offset_y = 0
 
     def load_json(self, json_file):
         with open(json_file, 'r') as f:
@@ -265,6 +267,10 @@ class AnnotationViewer(QMainWindow):
 
         self.scene.setSceneRect(0, 0, 511, 511)
         self.view.setSceneRect(0, 0, 511, 511)
+
+        # ✅ Apply scaling factor
+        scale_factor = 2  # Increase this to make the boxes appear larger
+        self.view.setTransform(self.view.transform().scale(scale_factor, scale_factor))
 
 
         content_layout.addWidget(self.view, 2)
@@ -343,7 +349,13 @@ class AnnotationViewer(QMainWindow):
                 label_offset = [0, 0]  # Default offset
                 for label in self.scene.items():
                     if isinstance(label, LabelBoxItem) and label.text_item.toPlainText() == caption:
+                        
                         label_offset = label.get_offset()
+                        x_offset, y_offset = label.offset_x, self.offset_y
+                        print(f"Found label {caption} at offset {label_offset}")
+                        label_offset = [x_offset, y_offset]
+                        print(f"Found label {caption} at offset {label_offset}")
+
                         break  # Found the label, stop searching
 
                 # Store in dictionary
