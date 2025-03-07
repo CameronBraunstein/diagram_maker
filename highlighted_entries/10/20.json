@@ -1,0 +1,148 @@
+{
+    "highlighted_entries": {
+        "1": {
+            "edge_color": "#bbd01c",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "person"
+        },
+        "2": {
+            "edge_color": "#23efe5",
+            "text_offset": [
+                -3,
+                80
+            ],
+            "box_name": "coffee table"
+        },
+        "4": {
+            "edge_color": "#e6e61d",
+            "text_offset": [
+                34,
+                15
+            ],
+            "box_name": "ceiling"
+        },
+        "5": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                15,
+                80
+            ],
+            "box_name": "wall"
+        },
+        "6": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                90,
+                80
+            ],
+            "box_name": "floor"
+        },
+        "7": {
+            "edge_color": "#6d0dc1",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "curtain"
+        },
+        "8": {
+            "edge_color": "#ba175a",
+            "text_offset": [
+                -46,
+                -10
+            ],
+            "box_name": "sconce"
+        },
+        "12": {
+            "edge_color": "#332a89",
+            "text_offset": [
+                77,
+                0
+            ],
+            "box_name": "table"
+        },
+        "13": {
+            "edge_color": "#98e0d7",
+            "text_offset": [
+                -3,
+                20
+            ],
+            "box_name": "windowpane"
+        },
+        "14": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                20,
+                40
+            ],
+            "box_name": "wall"
+        },
+        "16": {
+            "edge_color": "#94db12",
+            "text_offset": [
+                132,
+                170
+            ],
+            "box_name": "sofa"
+        },
+        "17": {
+            "edge_color": "#653b9b",
+            "text_offset": [
+                56,
+                70
+            ],
+            "box_name": "bed"
+        },
+        "19": {
+            "edge_color": "#577bd3",
+            "text_offset": [
+                -1,
+                0
+            ],
+            "box_name": "book"
+        },
+        "22": {
+            "edge_color": "#000000",
+            "text_offset": [
+                15,
+                30
+            ],
+            "box_name": "desk"
+        },
+        "24": {
+            "edge_color": "#6794ab",
+            "text_offset": [
+                20,
+                20
+            ],
+            "box_name": "cushion"
+        },
+        "25": {
+            "edge_color": "#94db12",
+            "text_offset": [
+                142,
+                40
+            ],
+            "box_name": "sofa"
+        },
+        "27": {
+            "edge_color": "#1cc1b1",
+            "text_offset": [
+                170,
+                105
+            ],
+            "box_name": "lamp"
+        },
+        "29": {
+            "edge_color": "#6794ab",
+            "text_offset": [
+                -60,
+                0
+            ],
+            "box_name": "cushion"
+        }
+    }
+}

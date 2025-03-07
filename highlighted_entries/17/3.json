@@ -1,0 +1,76 @@
+{
+    "highlighted_entries": {
+        "1": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                200,
+                100
+            ],
+            "box_name": "floor"
+        },
+        "3": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                25,
+                30
+            ],
+            "box_name": "plant"
+        },
+        "4": {
+            "edge_color": "#000000",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "clock"
+        },
+        "5": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                25,
+                15
+            ],
+            "box_name": "plant"
+        },
+        "13": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                25,
+                15
+            ],
+            "box_name": "plant"
+        },
+        "14": {
+            "edge_color": "#c02706",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "door"
+        },
+        "20": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                35,
+                180
+            ],
+            "box_name": "plant"
+        },
+        "22": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                60,
+                50
+            ],
+            "box_name": "plant"
+        },
+        "25": {
+            "edge_color": "#e6e61d",
+            "text_offset": [
+                30,
+                15
+            ],
+            "box_name": "ceiling"
+        }
+    }
+}

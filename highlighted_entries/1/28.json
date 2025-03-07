@@ -1,0 +1,92 @@
+{
+    "highlighted_entries": {
+        "0": {
+            "edge_color": "#e6e61d",
+            "text_offset": [
+                98,
+                15
+            ],
+            "box_name": "ceiling"
+        },
+        "3": {
+            "edge_color": "#653b9b",
+            "text_offset": [
+                158,
+                150
+            ],
+            "box_name": "bed"
+        },
+        "4": {
+            "edge_color": "#1cc1b1",
+            "text_offset": [
+                21,
+                0
+            ],
+            "box_name": "lamp"
+        },
+        "10": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                10,
+                35
+            ],
+            "box_name": "wall"
+        },
+        "12": {
+            "edge_color": "#332a89",
+            "text_offset": [
+                35,
+                0
+            ],
+            "box_name": "table"
+        },
+        "13": {
+            "edge_color": "#8a5a11",
+            "text_offset": [
+                57,
+                0
+            ],
+            "box_name": "light"
+        },
+        "15": {
+            "edge_color": "#6794ab",
+            "text_offset": [
+                20,
+                0
+            ],
+            "box_name": "cushion"
+        },
+        "17": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                49,
+                35
+            ],
+            "box_name": "wall"
+        },
+        "18": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                10,
+                35
+            ],
+            "box_name": "wall"
+        },
+        "20": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                63,
+                50
+            ],
+            "box_name": "floor"
+        },
+        "29": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                49,
+                35
+            ],
+            "box_name": "wall"
+        }
+    }
+}

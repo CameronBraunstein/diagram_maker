@@ -1,0 +1,92 @@
+{
+    "highlighted_entries": {
+        "1": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                30,
+                30
+            ],
+            "box_name": "plant"
+        },
+        "7": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                60,
+                200
+            ],
+            "box_name": "plant"
+        },
+        "8": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                30,
+                30
+            ],
+            "box_name": "plant"
+        },
+        "11": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                10,
+                50
+            ],
+            "box_name": "plant"
+        },
+        "12": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                40,
+                120
+            ],
+            "box_name": "plant"
+        },
+        "14": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                100,
+                20
+            ],
+            "box_name": "building"
+        },
+        "16": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                300,
+                220
+            ],
+            "box_name": "floor"
+        },
+        "17": {
+            "edge_color": "#df1077",
+            "text_offset": [
+                -10,
+                60
+            ],
+            "box_name": "armchair"
+        },
+        "22": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                30,
+                30
+            ],
+            "box_name": "plant"
+        },
+        "24": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                30,
+                30
+            ],
+            "box_name": "plant"
+        },
+        "29": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                30,
+                230
+            ],
+            "box_name": "plant"
+        }
+    }
+}

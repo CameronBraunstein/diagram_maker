@@ -66,15 +66,17 @@ highlighted_entries = {
 }
 
 if __name__ == '__main__':
-    current_scene_instance = "/1/23"
+    current_scene_instance = "/12/27" #  [0, 14, 27]
+
+
 
     # for the generation of highlighted entries
-    app = QApplication(sys.argv)
+    #app = QApplication(sys.argv)
     json_file = "/home/hepe00001/Desktop/neuro_explicit/generative_diffusion/cherry_pick/survey_benchmark"+current_scene_instance+".json"
-    viewer = AnnotationViewer(json_file, current_scene_instance)
+    #viewer = AnnotationViewer(json_file, current_scene_instance)
     
-    viewer.show()
-    app.exec_()
+    #viewer.show()
+    #app.exec_()
 
     highlighted_entries = _load_json("/home/hepe00001/diagram_maker/highlighted_entries"+current_scene_instance+".json")
 

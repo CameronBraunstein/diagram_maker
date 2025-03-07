@@ -1,0 +1,132 @@
+{
+    "highlighted_entries": {
+        "1": {
+            "edge_color": "#3063f0",
+            "text_offset": [
+                75,
+                15
+            ],
+            "box_name": "sky"
+        },
+        "2": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                86,
+                15
+            ],
+            "box_name": "building"
+        },
+        "3": {
+            "edge_color": "#bbd01c",
+            "text_offset": [
+                16,
+                -40
+            ],
+            "box_name": "person"
+        },
+        "4": {
+            "edge_color": "#356b64",
+            "text_offset": [
+                -155,
+                120
+            ],
+            "box_name": "sidewalk"
+        },
+        "5": {
+            "edge_color": "#356b64",
+            "text_offset": [
+                145,
+                105
+            ],
+            "box_name": "sidewalk"
+        },
+        "6": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                46,
+                16
+            ],
+            "box_name": "building"
+        },
+        "7": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                -86,
+                -20
+            ],
+            "box_name": "building"
+        },
+        "10": {
+            "edge_color": "#bbd01c",
+            "text_offset": [
+                0,
+                65
+            ],
+            "box_name": "person"
+        },
+        "11": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                86,
+                105
+            ],
+            "box_name": "building"
+        },
+        "13": {
+            "edge_color": "#f30d0d",
+            "text_offset": [
+                -151,
+                30
+            ],
+            "box_name": "streetlight"
+        },
+        "15": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                86,
+                15
+            ],
+            "box_name": "building"
+        },
+        "18": {
+            "edge_color": "#55065e",
+            "text_offset": [
+                201,
+                100
+            ],
+            "box_name": "road"
+        },
+        "22": {
+            "edge_color": "#356b64",
+            "text_offset": [
+                195,
+                0
+            ],
+            "box_name": "sidewalk"
+        },
+        "23": {
+            "edge_color": "#69130b",
+            "text_offset": [
+                -37,
+                -30
+            ],
+            "box_name": "tree"
+        },
+        "24": {
+            "edge_color": "#701f3c",
+            "text_offset": [
+                -29,
+                -35
+            ],
+            "box_name": "bench"
+        },
+        "29": {
+            "edge_color": "#bbd01c",
+            "text_offset": [
+                -66,
+                65
+            ],
+            "box_name": "person"
+        }
+    }
+}

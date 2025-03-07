@@ -11,8 +11,8 @@
         "4": {
             "edge_color": "#d1b804",
             "text_offset": [
-                137,
-                0
+                100,
+                200
             ],
             "box_name": "wall"
         },
@@ -20,23 +20,23 @@
             "edge_color": "#332a89",
             "text_offset": [
                 7,
-                0
+                10
             ],
             "box_name": "table"
         },
         "6": {
             "edge_color": "#d1b804",
             "text_offset": [
-                137,
-                0
+                10,
+                200
             ],
             "box_name": "wall"
         },
         "9": {
             "edge_color": "#2a892a",
             "text_offset": [
-                0,
-                0
+                15,
+                15
             ],
             "box_name": "cabinet"
         },
@@ -44,7 +44,7 @@
             "edge_color": "#6794ab",
             "text_offset": [
                 26,
-                0
+                15
             ],
             "box_name": "cushion"
         },
@@ -52,14 +52,14 @@
             "edge_color": "#653b9b",
             "text_offset": [
                 153,
-                0
+                100
             ],
             "box_name": "bed"
         },
         "15": {
             "edge_color": "#ba175a",
             "text_offset": [
-                8,
+                35,
                 0
             ],
             "box_name": "sconce"
@@ -68,7 +68,7 @@
             "edge_color": "#6d0dc1",
             "text_offset": [
                 2,
-                0
+                150
             ],
             "box_name": "curtain"
         },
@@ -84,7 +84,7 @@
             "edge_color": "#6794ab",
             "text_offset": [
                 26,
-                0
+                45
             ],
             "box_name": "cushion"
         },
@@ -100,7 +100,7 @@
             "edge_color": "#98e0d7",
             "text_offset": [
                 -23,
-                0
+                150
             ],
             "box_name": "windowpane"
         },
@@ -108,15 +108,15 @@
             "edge_color": "#98e0d7",
             "text_offset": [
                 -23,
-                0
+                50
             ],
             "box_name": "windowpane"
         },
         "27": {
             "edge_color": "#892a58",
             "text_offset": [
-                23,
-                0
+                18,
+                35
             ],
             "box_name": "chair"
         },
@@ -124,15 +124,15 @@
             "edge_color": "#d1b804",
             "text_offset": [
                 137,
-                0
+                15
             ],
             "box_name": "wall"
         },
         "29": {
             "edge_color": "#000000",
             "text_offset": [
-                -19,
-                0
+                10,
+                20
             ],
             "box_name": "ceiling lamp"
         }

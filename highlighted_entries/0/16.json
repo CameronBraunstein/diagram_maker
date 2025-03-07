@@ -1,0 +1,124 @@
+{
+    "highlighted_entries": {
+        "2": {
+            "edge_color": "#3063f0",
+            "text_offset": [
+                143,
+                15
+            ],
+            "box_name": "sky"
+        },
+        "4": {
+            "edge_color": "#13690b",
+            "text_offset": [
+                63,
+                20
+            ],
+            "box_name": "car"
+        },
+        "6": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                54,
+                15
+            ],
+            "box_name": "building"
+        },
+        "7": {
+            "edge_color": "#13690b",
+            "text_offset": [
+                63,
+                20
+            ],
+            "box_name": "car"
+        },
+        "10": {
+            "edge_color": "#356b64",
+            "text_offset": [
+                15,
+                30
+            ],
+            "box_name": "sidewalk"
+        },
+        "12": {
+            "edge_color": "#13690b",
+            "text_offset": [
+                63,
+                0
+            ],
+            "box_name": "car"
+        },
+        "13": {
+            "edge_color": "#356b64",
+            "text_offset": [
+                -80,
+                40
+            ],
+            "box_name": "sidewalk"
+        },
+        "14": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                54,
+                60
+            ],
+            "box_name": "building"
+        },
+        "20": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                -28,
+                0
+            ],
+            "box_name": "plant"
+        },
+        "21": {
+            "edge_color": "#a13d32",
+            "text_offset": [
+                20,
+                0
+            ],
+            "box_name": "stairs"
+        },
+        "22": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                54,
+                40
+            ],
+            "box_name": "building"
+        },
+        "23": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                54,
+                15
+            ],
+            "box_name": "building"
+        },
+        "25": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                -180,
+                -40
+            ],
+            "box_name": "plant"
+        },
+        "27": {
+            "edge_color": "#55065e",
+            "text_offset": [
+                262,
+                90
+            ],
+            "box_name": "road"
+        },
+        "29": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                28,
+                20
+            ],
+            "box_name": "plant"
+        }
+    }
+}

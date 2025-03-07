@@ -1,0 +1,36 @@
+{
+    "highlighted_entries": {
+        "8": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                75,
+                160
+            ],
+            "box_name": "mountain"
+        },
+        "10": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                60,
+                80
+            ],
+            "box_name": "mountain"
+        },
+        "24": {
+            "edge_color": "#3063f0",
+            "text_offset": [
+                230,
+                30
+            ],
+            "box_name": "sky"
+        },
+        "28": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                90,
+                180
+            ],
+            "box_name": "mountain"
+        }
+    }
+}

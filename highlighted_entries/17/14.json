@@ -1,0 +1,100 @@
+{
+    "highlighted_entries": {
+        "3": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                10,
+                0
+            ],
+            "box_name": "plant"
+        },
+        "6": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                40,
+                160
+            ],
+            "box_name": "plant"
+        },
+        "8": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                -41,
+                15
+            ],
+            "box_name": "building"
+        },
+        "11": {
+            "edge_color": "#3063f0",
+            "text_offset": [
+                92,
+                15
+            ],
+            "box_name": "sky"
+        },
+        "12": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                -41,
+                15
+            ],
+            "box_name": "building"
+        },
+        "14": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                120,
+                150
+            ],
+            "box_name": "plant"
+        },
+        "16": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                400,
+                70
+            ],
+            "box_name": "wall"
+        },
+        "19": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                15,
+                15
+            ],
+            "box_name": "building"
+        },
+        "21": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                -41,
+                55
+            ],
+            "box_name": "building"
+        },
+        "22": {
+            "edge_color": "#0d7f0d",
+            "text_offset": [
+                10,
+                40
+            ],
+            "box_name": "plant"
+        },
+        "28": {
+            "edge_color": "#2f1f2e",
+            "text_offset": [
+                11,
+                0
+            ],
+            "box_name": "pot"
+        },
+        "29": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                14,
+                0
+            ],
+            "box_name": "wall"
+        }
+    }
+}

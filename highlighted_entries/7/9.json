@@ -1,0 +1,60 @@
+{
+    "highlighted_entries": {
+        "2": {
+            "edge_color": "#69130b",
+            "text_offset": [
+                172,
+                -20
+            ],
+            "box_name": "tree"
+        },
+        "4": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                56,
+                -20
+            ],
+            "box_name": "mountain"
+        },
+        "8": {
+            "edge_color": "#55065e",
+            "text_offset": [
+                238,
+                100
+            ],
+            "box_name": "road"
+        },
+        "13": {
+            "edge_color": "#55065e",
+            "text_offset": [
+                62,
+                0
+            ],
+            "box_name": "road"
+        },
+        "24": {
+            "edge_color": "#13690b",
+            "text_offset": [
+                -45,
+                20
+            ],
+            "box_name": "car"
+        },
+        "25": {
+            "edge_color": "#3063f0",
+            "text_offset": [
+                193,
+                65
+            ],
+            "box_name": "sky"
+        },
+        "26": {
+            "edge_color": "#ec1de0",
+            "text_offset": [
+                56,
+                -20
+            ],
+            "box_name": "grass"
+        }
+    }
+}

@@ -1,0 +1,164 @@
+{
+    "highlighted_entries": {
+        "0": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                3,
+                0
+            ],
+            "box_name": "painting"
+        },
+        "1": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                75,
+                15
+            ],
+            "box_name": "wall"
+        },
+        "2": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                25,
+                0
+            ],
+            "box_name": "painting"
+        },
+        "3": {
+            "edge_color": "#e79af0",
+            "text_offset": [
+                -34,
+                0
+            ],
+            "box_name": "mirror"
+        },
+        "4": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                33,
+                0
+            ],
+            "box_name": "painting"
+        },
+        "6": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                52,
+                135
+            ],
+            "box_name": "floor"
+        },
+        "7": {
+            "edge_color": "#6794ab",
+            "text_offset": [
+                40,
+                30
+            ],
+            "box_name": "cushion"
+        },
+        "8": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                35,
+                15
+            ],
+            "box_name": "wall"
+        },
+        "9": {
+            "edge_color": "#577bd3",
+            "text_offset": [
+                -34,
+                30
+            ],
+            "box_name": "book"
+        },
+        "10": {
+            "edge_color": "#332a89",
+            "text_offset": [
+                8,
+                70
+            ],
+            "box_name": "table"
+        },
+        "11": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                -73,
+                0
+            ],
+            "box_name": "painting"
+        },
+        "12": {
+            "edge_color": "#653b9b",
+            "text_offset": [
+                176,
+                200
+            ],
+            "box_name": "bed"
+        },
+        "14": {
+            "edge_color": "#6794ab",
+            "text_offset": [
+                40,
+                55
+            ],
+            "box_name": "cushion"
+        },
+        "15": {
+            "edge_color": "#332a89",
+            "text_offset": [
+                15,
+                0
+            ],
+            "box_name": "table"
+        },
+        "18": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                3,
+                0
+            ],
+            "box_name": "painting"
+        },
+        "20": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                75,
+                15
+            ],
+            "box_name": "wall"
+        },
+        "24": {
+            "edge_color": "#2a892a",
+            "text_offset": [
+                -37,
+                30
+            ],
+            "box_name": "cabinet"
+        },
+        "26": {
+            "edge_color": "#000000",
+            "text_offset": [
+                30,
+                25
+            ],
+            "box_name": "wardrobe"
+        },
+        "27": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                12,
+                5
+            ],
+            "box_name": "floor"
+        },
+        "28": {
+            "edge_color": "#c02706",
+            "text_offset": [
+                2,
+                0
+            ],
+            "box_name": "door"
+        }
+    }
+}

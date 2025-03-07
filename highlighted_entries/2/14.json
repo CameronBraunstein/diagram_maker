@@ -1,0 +1,124 @@
+{
+    "highlighted_entries": {
+        "0": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                39,
+                0
+            ],
+            "box_name": "painting"
+        },
+        "1": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                200,
+                25
+            ],
+            "box_name": "wall"
+        },
+        "5": {
+            "edge_color": "#332a89",
+            "text_offset": [
+                4,
+                0
+            ],
+            "box_name": "table"
+        },
+        "7": {
+            "edge_color": "#c02706",
+            "text_offset": [
+                11,
+                0
+            ],
+            "box_name": "door"
+        },
+        "8": {
+            "edge_color": "#e6e61d",
+            "text_offset": [
+                115,
+                15
+            ],
+            "box_name": "ceiling"
+        },
+        "9": {
+            "edge_color": "#6d0dc1",
+            "text_offset": [
+                -10,
+                0
+            ],
+            "box_name": "curtain"
+        },
+        "13": {
+            "edge_color": "#1cc1b1",
+            "text_offset": [
+                -15,
+                0
+            ],
+            "box_name": "lamp"
+        },
+        "14": {
+            "edge_color": "#332a89",
+            "text_offset": [
+                4,
+                0
+            ],
+            "box_name": "table"
+        },
+        "15": {
+            "edge_color": "#1cc1b1",
+            "text_offset": [
+                -36,
+                0
+            ],
+            "box_name": "lamp"
+        },
+        "16": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                12,
+                15
+            ],
+            "box_name": "wall"
+        },
+        "18": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                275,
+                120
+            ],
+            "box_name": "floor"
+        },
+        "19": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                39,
+                25
+            ],
+            "box_name": "painting"
+        },
+        "20": {
+            "edge_color": "#94db12",
+            "text_offset": [
+                20,
+                60
+            ],
+            "box_name": "sofa"
+        },
+        "26": {
+            "edge_color": "#94db12",
+            "text_offset": [
+                20,
+                60
+            ],
+            "box_name": "sofa"
+        },
+        "29": {
+            "edge_color": "#000000",
+            "text_offset": [
+                20,
+                35
+            ],
+            "box_name": "ceiling lamp"
+        }
+    }
+}

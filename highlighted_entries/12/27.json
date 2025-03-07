@@ -1,0 +1,76 @@
+{
+    "highlighted_entries": {
+        "3": {
+            "edge_color": "#31b586",
+            "text_offset": [
+                30,
+                -15
+            ],
+            "box_name": "building"
+        },
+        "5": {
+            "edge_color": "#69130b",
+            "text_offset": [
+                370,
+                40
+            ],
+            "box_name": "tree"
+        },
+        "6": {
+            "edge_color": "#69130b",
+            "text_offset": [
+                30,
+                50
+            ],
+            "box_name": "tree"
+        },
+        "9": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                20,
+                180
+            ],
+            "box_name": "mountain"
+        },
+        "13": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                80,
+                165
+            ],
+            "box_name": "mountain"
+        },
+        "19": {
+            "edge_color": "#3063f0",
+            "text_offset": [
+                150,
+                20
+            ],
+            "box_name": "sky"
+        },
+        "23": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                60,
+                90
+            ],
+            "box_name": "mountain"
+        },
+        "25": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "mountain"
+        },
+        "29": {
+            "edge_color": "#babf01",
+            "text_offset": [
+                170,
+                30
+            ],
+            "box_name": "mountain"
+        }
+    }
+}

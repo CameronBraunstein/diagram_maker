@@ -1,0 +1,172 @@
+{
+    "highlighted_entries": {
+        "2": {
+            "edge_color": "#6794ab",
+            "text_offset": [
+                25,
+                0
+            ],
+            "box_name": "cushion"
+        },
+        "4": {
+            "edge_color": "#df1077",
+            "text_offset": [
+                -2,
+                55
+            ],
+            "box_name": "armchair"
+        },
+        "6": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                -49,
+                50
+            ],
+            "box_name": "painting"
+        },
+        "8": {
+            "edge_color": "#c02706",
+            "text_offset": [
+                15,
+                180
+            ],
+            "box_name": "door"
+        },
+        "9": {
+            "edge_color": "#000000",
+            "text_offset": [
+                -29,
+                70
+            ],
+            "box_name": "screen door"
+        },
+        "10": {
+            "edge_color": "#e6e61d",
+            "text_offset": [
+                15,
+                15
+            ],
+            "box_name": "ceiling"
+        },
+        "11": {
+            "edge_color": "#94db12",
+            "text_offset": [
+                113,
+                150
+            ],
+            "box_name": "sofa"
+        },
+        "12": {
+            "edge_color": "#892a58",
+            "text_offset": [
+                -19,
+                0
+            ],
+            "box_name": "chair"
+        },
+        "13": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                15,
+                15
+            ],
+            "box_name": "wall"
+        },
+        "14": {
+            "edge_color": "#8a5a11",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "light"
+        },
+        "15": {
+            "edge_color": "#2106b9",
+            "text_offset": [
+                67,
+                160
+            ],
+            "box_name": "floor"
+        },
+        "18": {
+            "edge_color": "#6794ab",
+            "text_offset": [
+                25,
+                0
+            ],
+            "box_name": "cushion"
+        },
+        "19": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                -49,
+                -50
+            ],
+            "box_name": "painting"
+        },
+        "21": {
+            "edge_color": "#df1077",
+            "text_offset": [
+                -2,
+                90
+            ],
+            "box_name": "armchair"
+        },
+        "22": {
+            "edge_color": "#23efe5",
+            "text_offset": [
+                -46,
+                70
+            ],
+            "box_name": "coffee table"
+        },
+        "23": {
+            "edge_color": "#1cc1b1",
+            "text_offset": [
+                -9,
+                0
+            ],
+            "box_name": "lamp"
+        },
+        "24": {
+            "edge_color": "#d1b804",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "wall"
+        },
+        "26": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                -22,
+                50
+            ],
+            "box_name": "painting"
+        },
+        "27": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                -49,
+                0
+            ],
+            "box_name": "painting"
+        },
+        "28": {
+            "edge_color": "#8a5a11",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "light"
+        },
+        "29": {
+            "edge_color": "#ff0087",
+            "text_offset": [
+                -49,
+                0
+            ],
+            "box_name": "painting"
+        }
+    }
+}
