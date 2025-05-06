@@ -68,17 +68,16 @@ highlighted_entries = {
 if __name__ == '__main__':
     #current_scene_instance = "/12/27" #  [0, 14, 27]
 
-
-
-    # for the generation of highlighted entries
+    # FOR the generation of highlighted entries
     app = QApplication(sys.argv)
-    json_file = "/BS/inter_img_rep/work/diagram_maker/0.json"
+    json_file = "/BS/inter_img_rep/work/diagram_maker/layouts_json/test_layout.json"
     viewer = AnnotationViewer(json_file)
     
     viewer.show()
     app.exec_()
 
-    highlighted_entries = _load_json("/BS/inter_img_rep/work/diagram_maker/highlighted_entries.json")
+    # AFTER the generation of highlighted entries
+    highlighted_entries = _load_json("/BS/inter_img_rep/work/diagram_maker/highlighted_entries/test_highlighted_entries.json")
 
     # after the generation of highlighted entries
     diagram_saver = DiagramSaver()
@@ -87,5 +86,5 @@ if __name__ == '__main__':
         highlighted_entries["highlighted_entries"],
         diagram_type = DiagramName.MAIN_RESULTS.value,
         layout_path=json_file,
-        pdf_path = "./layout.pdf")
+        pdf_path = "/BS/inter_img_rep/work/diagram_maker/final_layouts/test_layout.pdf")
     print('Program Complete')

@@ -1,0 +1,52 @@
+{
+    "highlighted_entries": {
+        "1": {
+            "edge_color": "#bbd01c",
+            "text_offset": [
+                -72,
+                -89
+            ],
+            "box_name": "person"
+        },
+        "4": {
+            "edge_color": "#bbd01c",
+            "text_offset": [
+                -93,
+                -2
+            ],
+            "box_name": "person"
+        },
+        "5": {
+            "edge_color": "#000000",
+            "text_offset": [
+                -91,
+                34
+            ],
+            "box_name": "motorcycle"
+        },
+        "7": {
+            "edge_color": "#13690b",
+            "text_offset": [
+                -80,
+                -104
+            ],
+            "box_name": "car"
+        },
+        "11": {
+            "edge_color": "#13690b",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "car"
+        },
+        "15": {
+            "edge_color": "#000000",
+            "text_offset": [
+                -71,
+                -72
+            ],
+            "box_name": "motorcycle"
+        }
+    }
+}

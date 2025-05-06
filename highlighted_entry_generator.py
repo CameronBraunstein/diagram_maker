@@ -9,6 +9,8 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtGui import QColor, QPen, QBrush, QPainter, QFont
 from PyQt5.QtCore import Qt, QRectF
+from PyQt5.QtWidgets import QScrollArea
+
 
 hex_dict = {
     'highway': '#e79af0',
@@ -216,7 +218,6 @@ class LabelBoxItem(QGraphicsRectItem):
         text_box_x, text_box_y = self.x(), self.y()
         self.offset_x = int(text_box_x - self.bb_x)
         self.offset_y = int(text_box_y - self.bb_y)
-        print(f"Text box moved. Offset now: ({self.offset_x}, {self.offset_y})")
         super().mouseReleaseEvent(event)
 
     def get_offset(self):
@@ -227,7 +228,8 @@ class AnnotationViewer(QMainWindow):
     def __init__(self, json_file):
         super().__init__()
         self.setWindowTitle("Annotation Viewer")
-        self.setGeometry(200, 200, 400, 300)
+        #self.setGeometry(200, 200, 400, 300)
+        
         self.json_data = self.load_json(json_file)
         self.highlighted_entries = {}
         self.hex_dict = {}
@@ -244,7 +246,6 @@ class AnnotationViewer(QMainWindow):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
 
-        # Main vertical layout
         main_layout = QVBoxLayout(central_widget)
 
         # Title Label
@@ -252,45 +253,45 @@ class AnnotationViewer(QMainWindow):
         title_label.setAlignment(Qt.AlignCenter)
         title_label.setStyleSheet("font-size: 18px; font-weight: bold;")
         title_label.setContentsMargins(0, 0, 0, 0)
-        
-
         main_layout.addWidget(title_label)
-
-        # Horizontal layout for graphics view and button panel
-        content_layout = QHBoxLayout()
 
         # Graphics Scene and View
         self.scene = QGraphicsScene(0, 0, 511, 511)
         self.view = QGraphicsView(self.scene)
-        #self.view.setMinimumSize(1200, 800)
-        
+        self.view.setMinimumSize(600, 600)
         self.view.setRenderHint(QPainter.Antialiasing)
-
         self.scene.setSceneRect(0, 0, 511, 511)
         self.view.setSceneRect(0, 0, 511, 511)
-
-        # ✅ Apply scaling factor
-        scale_factor = 2  # Increase this to make the boxes appear larger
-        self.view.setTransform(self.view.transform().scale(scale_factor, scale_factor))
-
-
-        content_layout.addWidget(self.view, 2)
+        self.view.setTransform(self.view.transform().scale(2, 2))
 
         # Button Panel
         self.button_widget = QWidget()
         self.button_layout = QVBoxLayout(self.button_widget)
         self.button_widget.setFixedWidth(200)
-        content_layout.addWidget(self.button_widget, 1)
-
-        main_layout.addLayout(content_layout)
-        
-        self.load_annotations()
 
         # Save Button
         save_button = QPushButton("Save Highlights")
         save_button.setStyleSheet("background-color: green; color: white; font-weight: bold;")
+
         save_button.clicked.connect(self.save_highlighted_entries)
         self.button_layout.addWidget(save_button)
+
+        # Layout inside the scrollable widget
+        scroll_widget = QWidget()
+        scroll_layout = QHBoxLayout(scroll_widget)
+        scroll_layout.addWidget(self.view, 2)
+        scroll_layout.addWidget(self.button_widget, 1)
+
+        # Make it scrollable
+        scroll_area = QScrollArea()
+        scroll_area.setWidget(scroll_widget)
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setMinimumSize(900, 900)  # ✅ Controls initial size of the scroll area
+
+        main_layout.addWidget(scroll_area)
+
+        self.load_annotations()
+
 
     def load_annotations(self):
         for idx, anno in enumerate(self.json_data['annos']):
@@ -331,12 +332,10 @@ class AnnotationViewer(QMainWindow):
 
     def on_button_clicked(self, checked, item):
         """Ensure button click event is triggering toggle_highlight"""
-        #print(f"Button clicked for {item.caption}, checked: {checked}")  # Debugging
         item.toggle_highlight(self.hex_dict, self.highlighted_entries)
 
     def save_highlighted_entries(self):
-        save_path = "/BS/inter_img_rep/work/diagram_maker/highlighted_entries.json"
-        print(save_path)
+        save_path = "/BS/inter_img_rep/work/diagram_maker/highlighted_entries/test_highlighted_entries.json"
         highlighted_entries = {}
 
         # Iterate over bounding boxes (we stored them in self.bbox_items)
@@ -350,7 +349,6 @@ class AnnotationViewer(QMainWindow):
                 
                 if label_item is not None:
                     label_offset = label_item.get_offset()
-                    print(f"Found label {caption} at offset {label_offset}")
 
 
                 # Store in dictionary

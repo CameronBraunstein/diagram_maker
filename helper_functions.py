@@ -35,7 +35,6 @@ class DiagramSaver:
             
             if 'opacity' in obj:
                 if obj['opacity'] < 0.5:
-                    print(f'Opacity less than 0.5, skipping {i}')
                     continue
 
             #x_min, y_min, box_width, box_height = obj['bbox']
@@ -58,11 +57,9 @@ class DiagramSaver:
             fontweight = 'normal'
 
             fontsize = get_font_size(diagram_type)
-            print('fontsize:', fontsize)
             boxstyle_padding = get_pad_size(diagram_type)
             if str(i) in highlighted_entries.keys():
                 entry_dict = highlighted_entries[str(i)]
-                print(entry_dict.keys())
                 if BoxProperties.BOX_NAME.value in entry_dict:
                     
                     edgecolor = hex_dict.get(entry_dict.get(BoxProperties.BOX_NAME.value), "#000000")  
