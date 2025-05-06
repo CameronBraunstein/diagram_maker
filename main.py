@@ -66,19 +66,19 @@ highlighted_entries = {
 }
 
 if __name__ == '__main__':
-    current_scene_instance = "/12/27" #  [0, 14, 27]
+    #current_scene_instance = "/12/27" #  [0, 14, 27]
 
 
 
     # for the generation of highlighted entries
-    #app = QApplication(sys.argv)
-    json_file = "/home/hepe00001/Desktop/neuro_explicit/generative_diffusion/cherry_pick/survey_benchmark"+current_scene_instance+".json"
-    #viewer = AnnotationViewer(json_file, current_scene_instance)
+    app = QApplication(sys.argv)
+    json_file = "/BS/inter_img_rep/work/diagram_maker/0.json"
+    viewer = AnnotationViewer(json_file)
     
-    #viewer.show()
-    #app.exec_()
+    viewer.show()
+    app.exec_()
 
-    highlighted_entries = _load_json("/home/hepe00001/diagram_maker/highlighted_entries"+current_scene_instance+".json")
+    highlighted_entries = _load_json("/BS/inter_img_rep/work/diagram_maker/highlighted_entries.json")
 
     # after the generation of highlighted entries
     diagram_saver = DiagramSaver()
@@ -87,5 +87,5 @@ if __name__ == '__main__':
         highlighted_entries["highlighted_entries"],
         diagram_type = DiagramName.MAIN_RESULTS.value,
         layout_path=json_file,
-        pdf_path = "/home/hepe00001/diagram_maker/final_layouts"+current_scene_instance+".pdf")
+        pdf_path = "./layout.pdf")
     print('Program Complete')

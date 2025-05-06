@@ -1,0 +1,52 @@
+{
+    "highlighted_entries": {
+        "9": {
+            "edge_color": "#7b62ac",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "cabinet"
+        },
+        "10": {
+            "edge_color": "#ed41cd",
+            "text_offset": [
+                33,
+                7
+            ],
+            "box_name": "cushion"
+        },
+        "12": {
+            "edge_color": "#fe48de",
+            "text_offset": [
+                31,
+                21
+            ],
+            "box_name": "bed"
+        },
+        "18": {
+            "edge_color": "#9b9c68",
+            "text_offset": [
+                0,
+                0
+            ],
+            "box_name": "curtain"
+        },
+        "19": {
+            "edge_color": "#ed41cd",
+            "text_offset": [
+                33,
+                7
+            ],
+            "box_name": "cushion"
+        },
+        "28": {
+            "edge_color": "#93575f",
+            "text_offset": [
+                33,
+                13
+            ],
+            "box_name": "wall"
+        }
+    }
+}

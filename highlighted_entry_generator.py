@@ -207,31 +207,32 @@ class LabelBoxItem(QGraphicsRectItem):
         self.bb_x = x
         self.bb_y = y
 
+        # initial offset
+        self.offset_x = 0
+        self.offset_y = 0
+
     def mouseReleaseEvent(self, event):
-        """Update the offset when the label is moved."""
-        offset = self.get_offset()
+        """Save offset when the label is moved."""
+        text_box_x, text_box_y = self.x(), self.y()
+        self.offset_x = int(text_box_x - self.bb_x)
+        self.offset_y = int(text_box_y - self.bb_y)
+        print(f"Text box moved. Offset now: ({self.offset_x}, {self.offset_y})")
         super().mouseReleaseEvent(event)
 
     def get_offset(self):
-        """Calculate the offset relative to the bounding box after movement."""
-        text_box_x, text_box_y = self.x(), self.y()  # Get updated position of the text box
-        
-        self.offset_x = int(text_box_x - self.bb_x)
-        self.offset_y = int(text_box_y - self.bb_y)
-        print(f"Text box position: {text_box_x}, {text_box_y}, {self.bb_x}, {self.bb_y}, offset: {self.offset_x}, {self.offset_y}")
-        return [int(self.offset_x), int(self.offset_y)]
+        """Return the last known offset."""
+        return [self.offset_x, self.offset_y]
 
 class AnnotationViewer(QMainWindow):
-    def __init__(self, json_file, current_scene_instance):
+    def __init__(self, json_file):
         super().__init__()
         self.setWindowTitle("Annotation Viewer")
-        self.setGeometry(100, 100, 800, 600)
+        self.setGeometry(200, 200, 400, 300)
         self.json_data = self.load_json(json_file)
         self.highlighted_entries = {}
         self.hex_dict = {}
         self.bbox_items = []  # Store bounding box references
         self.initUI()
-        self.current_scene_instance = current_scene_instance
         self.offset_x = 0
         self.offset_y = 0
 
@@ -261,7 +262,7 @@ class AnnotationViewer(QMainWindow):
         # Graphics Scene and View
         self.scene = QGraphicsScene(0, 0, 511, 511)
         self.view = QGraphicsView(self.scene)
-        self.view.setMinimumSize(1200, 800)
+        #self.view.setMinimumSize(1200, 800)
         
         self.view.setRenderHint(QPainter.Antialiasing)
 
@@ -334,7 +335,7 @@ class AnnotationViewer(QMainWindow):
         item.toggle_highlight(self.hex_dict, self.highlighted_entries)
 
     def save_highlighted_entries(self):
-        save_path = "/home/hepe00001/diagram_maker/highlighted_entries"+self.current_scene_instance+".json"
+        save_path = "/BS/inter_img_rep/work/diagram_maker/highlighted_entries.json"
         print(save_path)
         highlighted_entries = {}
 
@@ -342,21 +343,15 @@ class AnnotationViewer(QMainWindow):
         for index, bbox_item in enumerate(self.bbox_items):
             
             if bbox_item.highlighted:  # Check if highlighted
-                bbox_index = bbox_item.index
                 caption = bbox_item.caption
 
-                # Find corresponding LabelBoxItem
-                label_offset = [0, 0]  # Default offset
-                for label in self.scene.items():
-                    if isinstance(label, LabelBoxItem) and label.text_item.toPlainText() == caption:
-                        
-                        label_offset = label.get_offset()
-                        x_offset, y_offset = label.offset_x, self.offset_y
-                        print(f"Found label {caption} at offset {label_offset}")
-                        label_offset = [x_offset, y_offset]
-                        print(f"Found label {caption} at offset {label_offset}")
+                label_offset = [0, 0]
+                label_item = bbox_item.label_item  # ✅ get the exact label
+                
+                if label_item is not None:
+                    label_offset = label_item.get_offset()
+                    print(f"Found label {caption} at offset {label_offset}")
 
-                        break  # Found the label, stop searching
 
                 # Store in dictionary
                 highlighted_entries[int(index)] = {

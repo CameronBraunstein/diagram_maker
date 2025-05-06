@@ -1,5 +1,8 @@
 import os
 from loaders_and_savers import _load_json
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend for saving files
+
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
